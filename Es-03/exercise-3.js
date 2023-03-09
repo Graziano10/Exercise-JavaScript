@@ -18,7 +18,7 @@ const divide = function (a, b) {
   return a / b;
 }
 
-const result = function () {
+const result = () => {
     console.log(divide(subtract(sum(2, 4) * sum02(5, 2), 2), 5));
     return
 }
