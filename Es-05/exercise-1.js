@@ -4,12 +4,11 @@ const person1 = {
   age: 25,
 };
 
-const person2 = 'Simon Doe 25';
+const person2 = person1;
 
 // Modify the property `firstName` of the `person2` in "Simon".
 
 console.log(person1);
+
+person2.firstName='Simon'
 console.log(person2);
-
-
-// L'ogetto n°1 è il template non viene modificato
