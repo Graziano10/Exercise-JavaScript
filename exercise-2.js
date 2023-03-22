@@ -17,3 +17,4 @@ const {...firstName} = personInfo
 console.log(id, firstName);
 
 
+
