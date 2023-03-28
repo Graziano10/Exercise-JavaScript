@@ -1,12 +1,7 @@
 
 
-
-x = (...other) => {
-    return other
-}
-
-
-// let numberStore = [0, 1, 2];
-// let newNumber = 3;
-
-console.log(x(1, 2, 3, 4, 5));
+let numberStore = [0, 1, 2];
+let newNumber = 3;
+numberStore.push(newNumber);
+let arrey = [...numberStore];
+console.log(arrey);
