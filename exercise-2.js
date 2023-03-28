@@ -6,15 +6,12 @@ const person = {
 };
 
 const id = person.id;
-const personInfo = {
-  firstName: person.firstName,
-  lastName: person.lastName,
-  age: person.age
-};
 
-const {...firstName} = personInfo
+const {...personInfo} = person
 
-console.log(id, firstName);
+console.log(id, personInfo);
+
+
 
 
 
