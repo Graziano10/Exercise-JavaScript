@@ -33,8 +33,6 @@ class AreaCalculator {
   }
 }
 
-
-
 const square = new Square(4);
 const rectangle = new Rectangle(4, 2);
 const circle = new Circle(5);
