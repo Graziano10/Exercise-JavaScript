@@ -10,7 +10,12 @@ const person1 = {
   }
 };
 
-const person2 = { ...person1, address: {...person1.address, city: "Milan"} };
+
+  const person2 = JSON.stringify(person1, function (key, value) {
+    if(key == "city")
+        return "Milan";
+    return value;
+}, ' ');
 
 console.log(person1);
 console.log(person2);
