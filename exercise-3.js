@@ -1,4 +1,4 @@
-function isAdult(person) {
+function isAdult({age}) {
   return age>= 18;
 }
 
