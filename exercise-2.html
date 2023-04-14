@@ -1,0 +1,50 @@
+<html>
+  <body>
+    <div id="container" style="display: flex; align-items: center;"></div>
+  </body>
+</html>
+
+<script>
+
+  const API_URL = 'https://jsonplaceholder.typicode.com/todos';
+  const $container = document.querySelector('#container');
+  const state = {
+    user: []
+  };
+
+  const fetchData = async () => {
+    try {
+      const response = await fetch(API_URL);
+      const result = await response.json();
+      if (response.ok) {
+        state.user = result; 
+      } else {
+        console.error(result)
+      }
+    } catch (error) {
+      console.log('Error 1001')
+      
+    }
+  };
+
+  const renderUl = async () => {
+    state.user.forEach((item) => {
+      $container.innerHTML += `
+      <ul>
+        <li>${item.userId}</li>  
+        <li>${item.id}</li>  
+        <li>${item.title}</li>  
+        <li>${item.completed}</li>  
+      </ul>
+      `
+    })
+  };
+
+  const init = async () => {
+    await fetchData();
+    renderUl();
+  };
+
+  init();
+  
+</script>
