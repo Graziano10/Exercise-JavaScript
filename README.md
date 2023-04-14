@@ -1,5 +1,7 @@
-# Exercise-JavaScript
+# Exercise Local Storage
 
-Created this repository for JavaScript exercises.
+Starting with the previous exercise, write a method that recover the data saved in `localStorage` and print them in the console
 
-{1 branch === 1 exercise}
+Tips:
+
+- Remember to use the available `JSON methods` (parse, stringify)
