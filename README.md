@@ -1,5 +1,5 @@
-# Exercise-JavaScript
+# Dom Tree
 
-Created this repository for JavaScript exercises.
+Get the value of the `firstName` text input field and print it in the console.
 
-{1 branch === 1 exercise}
+Use the `id` as selector.
