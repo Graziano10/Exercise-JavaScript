@@ -1,5 +1,11 @@
-# Exercise-JavaScript
+# Dom Tree
 
-Created this repository for JavaScript exercises.
+Get the value of all `input` and `label` fields.
 
-{1 branch === 1 exercise}
+The output in the console must be:
+
+```
+First Name: Mario
+Last Name: Rossi
+Age: 25
+```
