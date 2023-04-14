@@ -1,0 +1,38 @@
+<html>
+
+<body>
+  <div id="container" style="display: flex; align-items: center;"></div>
+</body>
+
+</html>
+
+<script>
+
+  const API_URL = 'https://jsonplaceholder.typicode.com/todos/4';
+  const $h2 = document.createElement('h2');
+  const $checkBox = document.createElement('input');
+
+  const fetchData = async () => {
+    try {
+      const response = await fetch(API_URL);
+      const result = await response.json();
+      $checkBox.setAttribute('type', 'checkbox');
+      $checkBox.checked = result.completed;
+      document.body.appendChild($h2);
+      document.body.append($checkBox);
+      $h2.append(result.title);
+      container.append($h2, $checkBox);
+
+      if (response.ok) {
+        state.users = result;
+      } else {
+        console.error(result);
+      }
+    } catch (error) {
+      console.error('Error 1001');
+    }
+  };
+
+  fetchData();
+
+</script>
